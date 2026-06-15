@@ -23,7 +23,6 @@ Freelance platforms charge you to *apply* for work — bids, "Connects," paid pe
 ## Why this is a GitMoney play
 GitMoney's whole thesis: **GitHub repos → real revenue.** DCC is exactly that, and it maps onto the OS rooms we already work in:
 - **saas** → the DCC platform itself
-- **client-delivery** → the **$3,500 agentic-stack service** that funds the build (custom AI agent systems for companies hiring for automatable roles — target list already combed)
 - **content-engine** → the films/explainers that drive the audience (top of funnel for the company)
 
 ## The Equation (team + open seats)
@@ -34,7 +33,7 @@ GitMoney's whole thesis: **GitHub repos → real revenue.** DCC is exactly that,
 | Co-Developer | Redpillar |
 | Founding Builders | the GitMoney cohort — *open roles below* |
 
-**Open to claim:** platform features · Stripe Connect escrow · auth/profiles · the offer/bidding flow · the agentic-stack engine · client-delivery pipeline · content engine.
+**Open to claim:** platform features · Stripe Connect escrow · auth/profiles · the offer/bidding flow · UI/brand · content engine.
 
 ## Status & roadmap
 - ✅ **Phase 0 — DONE:** brand, live waitlist (lead capture wired), tracker, deck, funnel.
@@ -52,7 +51,6 @@ Each piece of Phase 1 is an open issue. **Comment on the one you want to own.**
 | [#4](https://github.com/respectfulnrespected59-source/dcc/issues/4) | **Payments / Escrow** | _tech lead_ |
 | [#5](https://github.com/respectfulnrespected59-source/dcc/issues/5) | **Billing ($100 → $20/mo)** | _open_ |
 | [#6](https://github.com/respectfulnrespected59-source/dcc/issues/6) | **UI / Brand system** | _open_ |
-| [#7](https://github.com/respectfulnrespected59-source/dcc/issues/7) | **Service arm ($3,500 agent stacks)** | _parallel_ |
 
 **Three steps:** 1) skim the [deck](https://respectfulnrespected59-source.github.io/dcc/deck.html) → 2) comment on a workstream to claim it → 3) we scope Phase 1 together and ship.
 
