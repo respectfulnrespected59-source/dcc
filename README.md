@@ -41,10 +41,20 @@ GitMoney's whole thesis: **GitHub repos → real revenue.** DCC is exactly that,
 - 🔜 **Phase 1:** creator profiles + demo upload + client "Make an offer" + Stripe Connect escrow + the $100→$20/mo billing logic. *(Proposed stack: Next.js + Supabase + Stripe — open to the team's call.)*
 - 🔓 **Launch gate:** open DCC when the reservoir's full — 50 creators · 10 clients · 5 brokered deals (see the tracker).
 
-## Get involved
-1. Read the [deck](https://respectfulnrespected59-source.github.io/dcc/deck.html).
-2. Open an issue with the piece you want to own, or comment on the **Project Proposal** discussion.
-3. We scope Phase 1 together and ship.
+## Get involved — claim a workstream
+Each piece of Phase 1 is an open issue. **Comment on the one you want to own.**
+
+| # | Workstream | |
+|---|---|---|
+| [#1](https://github.com/respectfulnrespected59-source/dcc/issues/1) | **Auth + Profiles** | _open_ |
+| [#2](https://github.com/respectfulnrespected59-source/dcc/issues/2) | **Demos + Gallery** | _open_ |
+| [#3](https://github.com/respectfulnrespected59-source/dcc/issues/3) | **Offer / Bidding flow** | _open_ |
+| [#4](https://github.com/respectfulnrespected59-source/dcc/issues/4) | **Payments / Escrow** | _tech lead_ |
+| [#5](https://github.com/respectfulnrespected59-source/dcc/issues/5) | **Billing ($100 → $20/mo)** | _open_ |
+| [#6](https://github.com/respectfulnrespected59-source/dcc/issues/6) | **UI / Brand system** | _open_ |
+| [#7](https://github.com/respectfulnrespected59-source/dcc/issues/7) | **Service arm ($3,500 agent stacks)** | _parallel_ |
+
+**Three steps:** 1) skim the [deck](https://respectfulnrespected59-source.github.io/dcc/deck.html) → 2) comment on a workstream to claim it → 3) we scope Phase 1 together and ship.
 
 *We don't ask for the door fee. We hand you the key.* 🔑
 
