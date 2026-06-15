@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DCC — Digital Creative Contractors | Never pay to work</title>
+<meta name="description" content="Digital Creative Contractors — the freelance platform that does it right. Show your work free. Clients bid for you. You only pay after you've already been paid.">
+<meta property="og:title" content="DCC — Digital Creative Contractors">
+<meta property="og:description" content="Never pay to work. Show your work free. Clients bid for you. You only pay after you've been paid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08080c; --bg2:#0e0e15; --surface:#13131c; --line:#262633;
+  --text:#ececef; --dim:#9a9aa6;
+  --gold:#e9d8a6; --gold2:#d4a857; --cyan:#7fd4ff; --red:#e8786e; --green:#7fdca0;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --mono:'JetBrains Mono',monospace;
+  --max:1140px; --sec:clamp(4rem,3rem+5vw,8rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:var(--sans);color:var(--text);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background:
+    radial-gradient(1100px 560px at 78% -8%,rgba(212,168,87,.10),transparent 60%),
+    radial-gradient(900px 500px at 8% 18%,rgba(127,212,255,.06),transparent 60%),
+    var(--bg);}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.2rem,4vw,2rem)}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.04;letter-spacing:-.02em}
+.gold{color:var(--gold)} .cyan{color:var(--cyan)}
+
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(8,8,12,.6);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-weight:900;font-size:1.45rem;letter-spacing:.02em}
+.logo b{color:var(--gold)}
+.logo small{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.32em;color:var(--dim);margin-top:-2px;font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#1a1407;font-weight:700;padding:.7rem 1.25rem;border-radius:100px;border:0;cursor:pointer;font-family:var(--sans);font-size:.95rem;transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(233,216,166,.5);background:var(--gold2)}
+
+.hero{padding:clamp(3.5rem,7vw,7rem) 0 clamp(3rem,5vw,5rem)}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.28em;color:var(--cyan);text-transform:uppercase;margin-bottom:1.4rem;display:inline-block;border:1px solid var(--line);padding:.4rem .8rem;border-radius:100px}
+.hero h1{font-size:clamp(2.8rem,1.5rem+6vw,6rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.sub{font-size:clamp(1.05rem,.95rem+.6vw,1.4rem);color:var(--dim);max-width:46ch;margin:1.6rem 0 2.2rem;line-height:1.5}
+.hero p.sub b{color:var(--text);font-weight:600}
+.formrow{display:flex;gap:.6rem;flex-wrap:wrap;max-width:520px}
+.formrow input{flex:1;min-width:220px;background:var(--surface);border:1px solid var(--line);color:var(--text);padding:.85rem 1.1rem;border-radius:100px;font-size:1rem;font-family:var(--sans);transition:border-color .2s}
+.formrow input:focus{outline:none;border-color:var(--gold)}
+.microcopy{font-size:.82rem;color:var(--dim);margin-top:.9rem}
+.microcopy b{color:var(--green)}
+
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.015)}
+.strip .wrap{display:flex;gap:2rem;flex-wrap:wrap;justify-content:space-between;padding:1.4rem clamp(1.2rem,4vw,2rem);font-family:var(--mono);font-size:.82rem;color:var(--dim);letter-spacing:.04em}
+.strip s{color:var(--red);opacity:.8} .strip .yes{color:var(--gold)}
+
+section{padding:var(--sec) 0}
+.sec-num{font-family:var(--mono);font-size:.74rem;letter-spacing:.26em;color:var(--cyan);text-transform:uppercase;margin-bottom:.9rem}
+.sec-head h2{font-size:clamp(2rem,1.4rem+2.4vw,3.3rem)}
+.sec-head p{color:var(--dim);max-width:54ch;margin-top:1rem;font-size:1.08rem}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem;margin-top:2.6rem}
+.card{background:linear-gradient(180deg,var(--surface),#0d0d15);border:1px solid var(--line);border-radius:18px;padding:1.7rem 1.6rem;transition:transform .2s cubic-bezier(.16,1,.3,1),border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:rgba(233,216,166,.4)}
+.card .n{font-family:var(--mono);color:var(--gold2);font-size:.8rem;letter-spacing:.1em}
+.card h3{font-family:var(--sans);font-weight:700;font-size:1.18rem;margin:.7rem 0 .5rem;letter-spacing:0}
+.card p{color:var(--dim);font-size:.96rem}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:2.4rem}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.lane{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:2rem 1.8rem}
+.lane h3{font-family:var(--serif);font-size:1.5rem;margin-bottom:1.2rem}
+.lane .tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;padding:.3rem .7rem;border-radius:100px;border:1px solid var(--line);color:var(--cyan)}
+.lane ol{list-style:none;counter-reset:s;margin-top:1.2rem;display:flex;flex-direction:column;gap:1rem}
+.lane li{counter-increment:s;display:flex;gap:.9rem;align-items:flex-start}
+.lane li::before{content:counter(s);flex:0 0 28px;height:28px;border-radius:50%;background:rgba(233,216,166,.12);color:var(--gold);font-family:var(--mono);font-size:.85rem;display:grid;place-items:center;margin-top:1px}
+.lane li b{display:block;font-weight:600} .lane li span{color:var(--dim);font-size:.94rem}
+
+.fee{text-align:center;border:1px solid var(--line);border-radius:28px;background:
+  radial-gradient(600px 300px at 50% 0,rgba(212,168,87,.12),transparent 70%),var(--surface);padding:clamp(2.4rem,5vw,4rem) 1.5rem}
+.fee .big{font-family:var(--serif);font-weight:900;font-size:clamp(2.4rem,1.2rem+5vw,5rem);letter-spacing:-.03em;line-height:1.05}
+.fee .big .free{color:var(--green)} .fee .big .num{color:var(--gold)}
+.fee p{color:var(--dim);margin-top:1.2rem;font-size:1.1rem}
+.fee .pills{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.8rem}
+.fee .pill{font-family:var(--mono);font-size:.8rem;color:var(--dim);border:1px solid var(--line);padding:.5rem .9rem;border-radius:100px}
+.fee .pill s{color:var(--red)}
+
+.quote{text-align:center;max-width:24ch;margin:0 auto;font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+3vw,3.4rem);line-height:1.15}
+.quote .gold{display:block}
+
+.faq{display:grid;gap:.7rem;margin-top:2.2rem;max-width:760px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.3rem;cursor:pointer}
+details[open]{border-color:rgba(233,216,166,.35)}
+summary{font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--gold);font-size:1.3rem;font-family:var(--mono)}
+details[open] summary::after{content:'\2013'}
+details p{color:var(--dim);margin-top:.8rem;font-size:.98rem}
+
+.cta{background:linear-gradient(180deg,#0d0d15,#0a0a0e);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta .wrap{text-align:center;padding:var(--sec) clamp(1.2rem,4vw,2rem)}
+.cta h2{font-size:clamp(2rem,1.4rem+3vw,3.6rem)}
+.cta .formrow{margin:1.8rem auto 0;justify-content:center}
+
+footer{padding:3rem 0;color:var(--dim);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+footer a:hover{color:var(--gold)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(120%);background:var(--green);color:#06210f;font-weight:700;padding:.9rem 1.4rem;border-radius:100px;transition:transform .4s cubic-bezier(.16,1,.3,1);z-index:99}
+.toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#">D<b>C</b>C<small>DIGITAL CREATIVE CONTRACTORS</small></a>
+  <a class="btn" href="#join">Join the waitlist</a>
+</nav></div></header>
+
+<main>
+  <section class="hero"><div class="wrap">
+    <span class="eyebrow">The site that does it right</span>
+    <h1>Never pay<br>to <em>work.</em></h1>
+    <p class="sub"><b>Digital Creative Contractors.</b> Show your work for free. Clients bid for <b>you</b>. You only pay after you've already been paid.</p>
+    <form class="formrow" id="hero-form">
+      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email">
+      <button class="btn" type="submit">Get early access &rarr;</button>
+    </form>
+    <p class="microcopy">No bids. No "Connects." No fee to apply. <b>Free until you've earned $100.</b></p>
+  </div></section>
+
+  <div class="strip"><div class="wrap">
+    <span><s>Pay per application</s> &nbsp;&rarr;&nbsp; <span class="yes">Apply free, always</span></span>
+    <span><s>You bid for jobs</s> &nbsp;&rarr;&nbsp; <span class="yes">Clients bid for you</span></span>
+    <span><s>% skimmed off every job</s> &nbsp;&rarr;&nbsp; <span class="yes">$20/mo flat, after $100</span></span>
+  </div></div>
+
+  <section><div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">&mdash; 01 / The flip</div>
+      <h2>The other sites charge you<br>to <span class="gold">possibly</span> get hired.</h2>
+      <p>They sell you bids and "Connects" &mdash; you pay every time you apply, win or lose. You're not the customer there. You're the inventory. DCC flips all four.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="n">01</div><h3>Show work, free</h3><p>Build a profile and demo real work at zero cost. No paywall to be seen.</p></div>
+      <div class="card"><div class="n">02</div><h3>Clients bid for you</h3><p>Buyers browse your work and make offers &mdash; naming what they'll pay. Demand competes for talent.</p></div>
+      <div class="card"><div class="n">03</div><h3>$0 up front</h3><p>No application fees. No subscriptions until you've actually made money here.</p></div>
+      <div class="card"><div class="n">04</div><h3>Pay only after you're paid</h3><p>Free until your earnings cross $100. Then a flat $20/month. That's the whole deal.</p></div>
+    </div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <div class="sec-head"><div class="sec-num">&mdash; 02 / How it works</div><h2>Two sides. One fair deal.</h2></div>
+    <div class="split">
+      <div class="lane">
+        <span class="tag">For creators</span>
+        <h3>Get hired without a gatekeeper.</h3>
+        <ol>
+          <li><b>Post your demos</b><span>Upload real work. It's your storefront &mdash; free, always.</span></li>
+          <li><b>Receive offers</b><span>Clients who like your work bid for you and name a budget.</span></li>
+          <li><b>Get paid through escrow</b><span>Funds are held safely, released when you deliver. You keep 100%.</span></li>
+          <li><b>Only then, $20/mo</b><span>After you've earned $100 here. Never before.</span></li>
+        </ol>
+      </div>
+      <div class="lane">
+        <span class="tag">For clients</span>
+        <h3>Hire from proof, not promises.</h3>
+        <ol>
+          <li><b>Browse real work</b><span>Every contractor leads with demos. See the quality first.</span></li>
+          <li><b>Make an offer</b><span>Found someone you love? Bid your budget and brief.</span></li>
+          <li><b>Fund escrow</b><span>Your money is protected until the work is delivered.</span></li>
+          <li><b>Approve &amp; release</b><span>Happy with it? Release. Simple, safe, fast.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <div class="fee">
+      <div class="big"><span class="free">$0</span> until you earn $100.<br>Then <span class="num">$20</span>/month flat.</div>
+      <p>No per-bid fees. No percentage skimmed off your work. We only make money after you do.</p>
+      <div class="pills">
+        <span class="pill"><s>Connects</s></span>
+        <span class="pill"><s>Bid packs</s></span>
+        <span class="pill"><s>10&ndash;20% commission</s></span>
+        <span class="pill">&#10003; Flat $20/mo, after $100</span>
+      </div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <p class="quote">We only make money <span class="gold">after you do.</span></p>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <div class="sec-head"><div class="sec-num">&mdash; 03 / Questions</div><h2>The fine print, in plain words.</h2></div>
+    <div class="faq">
+      <details open><summary>Is it really free to start?</summary><p>Yes. Posting work, getting discovered, receiving offers, and getting paid your first $100 &mdash; all free. The flat $20/month only kicks in once you've earned $100 on DCC.</p></details>
+      <details><summary>How do clients "bid" for me?</summary><p>Your profile leads with real demos. Clients who like your work send an offer with a budget and brief. You accept the one that's right for you &mdash; you're not racing to underbid anyone.</p></details>
+      <details><summary>How do payments work?</summary><p>Through secure escrow. The client funds the project up front; the money is held and released to you when you deliver. No chasing invoices.</p></details>
+      <details><summary>Why $20 flat instead of a percentage?</summary><p>Because a percentage punishes you for doing well. A flat fee means a contractor earning $5,000/month pays the same $20 as one earning $200 &mdash; fair, predictable, yours to keep.</p></details>
+      <details><summary>Who's building this?</summary><p>Quantum Melanin Media &mdash; creators who got tired of paying to work and decided to build the alternative.</p></details>
+    </div>
+  </div></section>
+</main>
+
+<div class="cta" id="join"><div class="wrap">
+  <div class="sec-num" style="text-align:center">&mdash; Be first in</div>
+  <h2>Join the founding contractors.</h2>
+  <form class="formrow" id="cta-form">
+    <input type="email" name="email" placeholder="your@email.com" required aria-label="Email">
+    <button class="btn" type="submit">Claim your spot &rarr;</button>
+  </form>
+  <p class="microcopy" style="text-align:center">Early members get a permanent founding badge + first pick of clients.</p>
+</div></div>
+
+<footer><div class="wrap">
+  <span>&copy; 2026 <b class="gold">DCC</b> &mdash; Digital Creative Contractors &middot; A Quantum Melanin Media project</span>
+  <span><a href="mailto:respectfulnrespected59@gmail.com">respectfulnrespected59@gmail.com</a></span>
+</div></footer>
+
+<div class="toast" id="toast">You're on the list. &#128273;</div>
+
+<script>
+// Wire to Formspree (free): create a form at formspree.io, paste the ID below.
+var FORMSPREE_ID = "REPLACE_WITH_FORMSPREE_ID"; // e.g. "xayzwkqr"
+function handle(e){
+  e.preventDefault();
+  var f=e.target, email=f.email.value.trim();
+  if(!email) return;
+  var done=function(){ f.reset(); var t=document.getElementById('toast'); t.classList.add('show'); setTimeout(function(){t.classList.remove('show')},3200); };
+  if(FORMSPREE_ID && FORMSPREE_ID.indexOf('REPLACE')<0){
+    fetch('https://formspree.io/f/'+FORMSPREE_ID,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(done).catch(done);
+  } else {
+    try{var l=JSON.parse(localStorage.getItem('dcc_waitlist')||'[]');l.push({email:email,at:Date.now()});localStorage.setItem('dcc_waitlist',JSON.stringify(l));}catch(_){}
+    done();
+  }
+}
+document.getElementById('hero-form').addEventListener('submit',handle);
+document.getElementById('cta-form').addEventListener('submit',handle);
+</script>
+</body>
+</html>
