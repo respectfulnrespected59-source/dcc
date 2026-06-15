@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QMM × GitMoney — The DCC Build</title>
+<link rel="stylesheet" href="vendor/reveal.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08080c;--surface:#13131c;--line:#2a2a38;--text:#ececef;--dim:#9a9aa6;
+ --gold:#e9d8a6;--gold2:#d4a857;--cyan:#7fd4ff;--green:#7fdca0;--red:#e8786e}
+.reveal{font-family:'Inter',system-ui,sans-serif;color:var(--text);font-size:30px}
+.reveal .slides{text-align:left}
+.reveal section{background:
+  radial-gradient(1000px 520px at 80% -12%,rgba(212,168,87,.10),transparent 60%),
+  radial-gradient(800px 460px at 6% 16%,rgba(127,212,255,.06),transparent 60%),var(--bg)!important}
+.reveal-viewport{background:var(--bg)}
+.reveal h1,.reveal h2,.reveal h3{font-family:'Fraunces',serif;font-weight:900;letter-spacing:-.02em;text-transform:none;color:var(--text);line-height:1.04}
+.reveal h1{font-size:2.0em} .reveal h2{font-size:1.4em} .reveal h3{font-size:1.0em;font-weight:600}
+.gold{color:var(--gold)} .cyan{color:var(--cyan)} .green{color:var(--green)} .red{color:var(--red)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:.5em;letter-spacing:.26em;color:var(--cyan);text-transform:uppercase;display:inline-block;border:1px solid var(--line);padding:.4em .9em;border-radius:100px;margin-bottom:.8em}
+.dim{color:var(--dim)} .lead{font-size:1.05em;color:var(--dim);line-height:1.45}
+.reveal ul{margin-left:1em} .reveal li{margin:.45em 0;line-height:1.35}
+.reveal li::marker{color:var(--gold)}
+.kpis{display:flex;gap:1.1em;flex-wrap:wrap;margin-top:.6em}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.7em 1em;min-width:200px}
+.kpi b{font-family:'Fraunces',serif;font-size:1.6em;color:var(--gold);display:block;line-height:1}
+.kpi span{font-size:.62em;color:var(--dim);font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:.8em;margin-top:.5em}
+.c{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.8em 1em}
+.c h3{color:var(--gold);font-family:'Inter';font-weight:700;font-size:.82em;margin-bottom:.2em}
+.c p{font-size:.66em;color:var(--dim);margin:0;line-height:1.3}
+.flow{display:flex;align-items:center;gap:.5em;flex-wrap:wrap;font-size:.7em;margin-top:.5em}
+.flow .node{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.5em .8em}
+.flow .ar{color:var(--gold)}
+.team{display:flex;flex-direction:column;gap:.55em;margin-top:.3em}
+.member{display:flex;gap:.8em;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.7em 1em}
+.member .role{font-family:'JetBrains Mono',monospace;font-size:.5em;letter-spacing:.12em;color:var(--cyan);text-transform:uppercase}
+.member b{font-size:.78em} .member p{font-size:.62em;color:var(--dim);margin:.2em 0 0}
+.reveal a{color:var(--cyan)}
+.foot{position:absolute;bottom:.5em;right:.7em;font-family:'JetBrains Mono',monospace;font-size:.34em;color:var(--dim);letter-spacing:.1em}
+.big{font-family:'Fraunces',serif;font-weight:900;font-size:1.5em;line-height:1.05}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.6em;color:var(--green)}
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<section data-auto-animate>
+  <span class="eyebrow">Quantum Melanin Media &times; GitMoney</span>
+  <h1>Never pay to work.<br><span class="gold">Build the alternative.</span></h1>
+  <p class="lead" style="margin-top:.6em">A live creative-tech venture &mdash; from a finished AI film, to a freelance engine, to a fair freelance platform, to high-ticket AI services. Built in public. Ready to build together.</p>
+  <p class="tag" style="margin-top:1em">Robert Hadden Jr. &mdash; founder &middot; with the GitMoney cohort</p>
+  <div class="foot">USE &rarr; / SPACE TO ADVANCE</div>
+</section>
+
+<section>
+  <span class="eyebrow">01 &mdash; The problem</span>
+  <h2>The creative economy makes you <span class="red">pay to work.</span></h2>
+  <ul class="lead">
+    <li>Freelance platforms sell you "bids" &amp; "Connects" &mdash; you pay to <em>apply</em>, win or lose.</li>
+    <li>You're not the customer. You're the <span class="gold">inventory.</span></li>
+    <li>Talent is gatekept; the platform profits whether you eat or not.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">02 &mdash; So we built proof</span>
+  <h2>A full AI film. <span class="gold">Solo. Start to finish.</span></h2>
+  <p class="lead">BLOODLINES &mdash; written, directed, edited, scored &amp; published by one operator. 50+ AI shots, color grade, sound design, title sequence. Proof we don't just talk &mdash; we ship.</p>
+  <div class="kpis">
+    <div class="kpi"><b>4 min</b><span>cinematic film &mdash; public</span></div>
+    <div class="kpi"><b>60 s</b><span>showreel</span></div>
+    <div class="kpi"><b>~12%</b><span>of budget spent</span></div>
+  </div>
+  <p style="font-size:.6em;margin-top:.6em" class="dim">youtu.be/5o8BvLPIeoM &middot; youtu.be/Pn7volxJeDU</p>
+</section>
+
+<section>
+  <span class="eyebrow">03 &mdash; Then we built income</span>
+  <h2>Turned the craft into <span class="gold">cash flow.</span></h2>
+  <ul class="lead">
+    <li>Freelance kit: gig listings, case study, tuned outreach.</li>
+    <li>An <span class="gold">outreach engine</span> &mdash; combed ~100 live "hire me" gigs, mapped each to a pitch.</li>
+    <li>High-ticket lane: <span class="gold">custom AI agent stacks, $3,500 each</span>, sold to companies hiring for automatable roles.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">04 &mdash; Then we built the door</span>
+  <h2>Expose the trap &rarr; <span class="gold">build the alternative.</span></h2>
+  <p class="lead">A "Stop Paying to Work" explainer drives straight to <span class="gold">DCC &mdash; Digital Creative Contractors</span>: the freelance platform that does it right. <span class="tag">LIVE NOW.</span></p>
+  <div class="cards" style="margin-top:.6em">
+    <div class="c"><h3>Show work free</h3><p>No bids, no Connects, no fee to apply.</p></div>
+    <div class="c"><h3>Clients bid for YOU</h3><p>Demand competes for talent &mdash; power flips.</p></div>
+    <div class="c"><h3>$0 up front</h3><p>Nothing until you've made money here.</p></div>
+    <div class="c"><h3>$20/mo after $100</h3><p>Flat. We make money only after you do.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">05 &mdash; The flywheel</span>
+  <h2>One funnel. <span class="gold">Self-feeding.</span></h2>
+  <div class="flow">
+    <span class="node">Content</span><span class="ar">&rarr;</span>
+    <span class="node">Audience</span><span class="ar">&rarr;</span>
+    <span class="node gold">DCC (supply)</span><span class="ar">&rarr;</span>
+    <span class="node">Demand</span><span class="ar">&rarr;</span>
+    <span class="node gold">Agentic stacks ($3.5k)</span><span class="ar">&rarr;</span>
+    <span class="node">Case studies</span><span class="ar">&rarr;</span>
+    <span class="node">more Content</span>
+  </div>
+  <p class="lead" style="margin-top:.8em">Every film, every client, every agent build feeds the next. The content is the top of the funnel <em>for the company.</em></p>
+</section>
+
+<section>
+  <span class="eyebrow">06 &mdash; Traction TODAY (all live)</span>
+  <h2>Not a pitch deck of <span class="gold">someday.</span></h2>
+  <ul style="font-size:.78em">
+    <li>Film + reel + explainer &mdash; <span class="green">public on YouTube</span></li>
+    <li>DCC waitlist site &mdash; <span class="green">live</span>, lead capture wired to inbox</li>
+    <li>Reservoir gauge (launch tracker) &mdash; <span class="green">live</span></li>
+    <li>Freelance kit + ~100 combed gigs + 11 agentic-stack targets</li>
+    <li>4-agent automation company (QMM Stack) running the back office</li>
+  </ul>
+  <p style="font-size:.55em;margin-top:.5em" class="dim">respectfulnrespected59-source.github.io/dcc/ &middot; /dcc/tracker.html</p>
+</section>
+
+<section>
+  <span class="eyebrow">07 &mdash; The market is screaming</span>
+  <h2><span class="gold">~100</span> live "hire me" gigs. One category. One site. One day.</h2>
+  <p class="lead">That's not a job list &mdash; it's the <span class="gold">demand curve for DCC.</span> Every desperate hirer + every gatekept creator is a future user who'd rather skip the door fee too.</p>
+</section>
+
+<section data-auto-animate>
+  <span class="eyebrow">08 &mdash; The Equation</span>
+  <h2>The build team.</h2>
+  <div class="team">
+    <div class="member"><div><div class="role">Founder &middot; Creative &middot; Vision</div><b>Robert Hadden Jr. &mdash; Quantum Melanin Media</b><p>Story, brand, content engine, GTM, the proof (film &middot; DCC &middot; funnel).</p></div></div>
+    <div class="member"><div><div class="role">Technical Lead &middot; Architecture</div><b>Hitsuyo Aku ("Hits") &mdash; Lead Dev &middot; GitMoney Instructor</b><p>DCC Phase 1 architecture, the agentic-stack engine, code review, shipping standards.</p></div></div>
+    <div class="member"><div><div class="role">Co-Developer</div><b>Redpillar</b><p>Builds alongside Hits &mdash; platform features, integrations, the client-delivery pipeline.</p></div></div>
+    <div class="member"><div><div class="role">Founding Builders</div><b>The GitMoney cohort</b><p>Hands-on on a real revenue product &mdash; not a tutorial repo.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">09 &mdash; Why GitMoney, why now</span>
+  <h2>This <span class="gold">is</span> a GitMoney play.</h2>
+  <ul class="lead">
+    <li>GitMoney's whole thesis: GitHub repos &rarr; <span class="gold">real revenue.</span> DCC + agentic stacks are exactly that.</li>
+    <li>The GitMoney OS rooms &mdash; <span class="cyan">saas &middot; client-delivery &middot; content-engine</span> &mdash; already scaffold this. We point them at a flagship.</li>
+    <li>The cohort gets a <span class="gold">live product</span> on their resume + a stake in something real.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">10 &mdash; The ask</span>
+  <h2>Let's build it <span class="gold">hands-on, together.</span></h2>
+  <div class="cards">
+    <div class="c"><h3>Phase 1 &mdash; DCC</h3><p>Profiles + demos + client "make an offer" + Stripe Connect escrow + the $100&rarr;$20/mo logic.</p></div>
+    <div class="c"><h3>Service arm</h3><p>Productize the $3,500 agentic stack via GitMoney client-delivery. First sales fund the build.</p></div>
+    <div class="c"><h3>Launch gate</h3><p>Open DCC when the reservoir's full (50 creators &middot; 10 clients &middot; 5 brokered deals).</p></div>
+    <div class="c"><h3>The cohort</h3><p>Real roles, real shipping, real upside. Hits leads, Rob drives, everyone builds.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="big">We don't ask for<br>the door fee.<br><span class="gold">We hand you the key.</span> &#128273;</h2>
+  <p class="lead" style="margin-top:1em">Quantum Melanin Media &times; GitMoney &mdash; the platform that does it right.</p>
+  <p style="font-size:.6em;margin-top:1em" class="dim">DCC live &rarr; respectfulnrespected59-source.github.io/dcc/ &middot; Robert Hadden Jr.</p>
+</section>
+
+</div></div>
+<script src="vendor/reveal.js"></script>
+<script>Reveal.initialize({hash:true,controls:true,progress:true,transition:'fade',width:1280,height:720,margin:0.08});</script>
+</body>
+</html>
