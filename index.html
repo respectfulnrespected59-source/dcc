@@ -220,19 +220,16 @@ footer a:hover{color:var(--gold)}
 <div class="toast" id="toast">You're on the list. &#128273;</div>
 
 <script>
-// Wire to Formspree (free): create a form at formspree.io, paste the ID below.
-var FORMSPREE_ID = "REPLACE_WITH_FORMSPREE_ID"; // e.g. "xayzwkqr"
+// Wired to Formsubmit.co — leads go straight to the inbox (no account).
+// One-time: the FIRST submission triggers an activation email; click it once to go live.
+var ENDPOINT = "https://formsubmit.co/ajax/respectfulnrespected59@gmail.com";
 function handle(e){
   e.preventDefault();
   var f=e.target, email=f.email.value.trim();
   if(!email) return;
   var done=function(){ f.reset(); var t=document.getElementById('toast'); t.classList.add('show'); setTimeout(function(){t.classList.remove('show')},3200); };
-  if(FORMSPREE_ID && FORMSPREE_ID.indexOf('REPLACE')<0){
-    fetch('https://formspree.io/f/'+FORMSPREE_ID,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(done).catch(done);
-  } else {
-    try{var l=JSON.parse(localStorage.getItem('dcc_waitlist')||'[]');l.push({email:email,at:Date.now()});localStorage.setItem('dcc_waitlist',JSON.stringify(l));}catch(_){}
-    done();
-  }
+  fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},
+    body:JSON.stringify({email:email,_subject:'New DCC waitlist signup',_template:'table'})}).then(done).catch(done);
 }
 document.getElementById('hero-form').addEventListener('submit',handle);
 document.getElementById('cta-form').addEventListener('submit',handle);
