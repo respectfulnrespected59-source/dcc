@@ -7,6 +7,7 @@
 🌐 **Live waitlist:** https://respectfulnrespected59-source.github.io/dcc/
 🎤 **Pitch deck (11 slides):** https://respectfulnrespected59-source.github.io/dcc/deck.html
 📊 **Launch tracker:** https://respectfulnrespected59-source.github.io/dcc/tracker.html
+🏃 **The 30-Day Gig Sprint (founding cohort intake):** https://respectfulnrespected59-source.github.io/dcc/sprint.html — five pods, your own accounts, Work Scout finds the work, Work Route reads the pod nightly
 🎬 **Proof we ship:** [BLOODLINES — a full AI film, made solo](https://youtu.be/5o8BvLPIeoM) · [the explainer that feeds this funnel](https://youtu.be/zOxn_IRflZs)
 
 ---
@@ -57,4 +58,4 @@ Each piece of Phase 1 is an open issue. **Comment on the one you want to own.**
 *We don't ask for the door fee. We hand you the key.* 🔑
 
 ---
-*This repo currently hosts the Phase 0 landing page (`index.html`), the launch tracker (`tracker.html`), and the pitch deck (`deck.html`), served via GitHub Pages.*
+*This repo currently hosts the Phase 0 landing page (`index.html`), the launch tracker (`tracker.html`), the pitch deck (`deck.html`), and the 30-day sprint intake (`sprint.html`), served via GitHub Pages.*
