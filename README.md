@@ -1,4 +1,4 @@
-# DCC — Digital Creative Contractors
+# DCC — Digital Creation Contractors
 
 **Never pay to work.** The freelance platform that does it right: show your work free, clients bid for *you*, and you only pay after you've already been paid.
 
