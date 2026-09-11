@@ -7,7 +7,7 @@
 🌐 **Live waitlist:** https://respectfulnrespected59-source.github.io/dcc/
 🎤 **Pitch deck (11 slides):** https://respectfulnrespected59-source.github.io/dcc/deck.html
 📊 **Launch tracker:** https://respectfulnrespected59-source.github.io/dcc/tracker.html
-🏃 **The 30-Day Gig Sprint (founding cohort intake):** https://respectfulnrespected59-source.github.io/dcc/sprint.html — five pods, your own accounts, Work Scout finds the work, Work Route reads the pod nightly
+🏃 **The 30-Day Gig Sprint (founding cohort intake):** https://respectfulnrespected59-source.github.io/dcc/sprint.html — five pods, your own accounts, WorkScout finds the work, D.C.C. (https://dcc-workscout.onrender.com) runs the pods
 🎬 **Proof we ship:** [BLOODLINES — a full AI film, made solo](https://youtu.be/5o8BvLPIeoM) · [the explainer that feeds this funnel](https://youtu.be/zOxn_IRflZs)
 
 ---
